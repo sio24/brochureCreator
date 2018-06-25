@@ -1,0 +1,249 @@
+﻿@media screen {
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}
+
+div.portrait {
+    width: 595px;
+    margin: 0 auto;
+}
+
+div.landscape {
+    width: 876px;
+    margin: 0 auto;
+}
+
+body {
+    border:0;
+    background-color:#d4eaff;
+}
+
+[class*=Img] {
+    position:absolute;
+    overflow:hidden;
+}
+
+[class*=Img] img {
+    position:relative;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    display:block; 
+}
+
+[class^=propImg] img {
+   border:2px solid black;
+   width:126px;
+   height:126px;
+}
+
+.tabImg {
+    top:502px;
+    left:0px;
+    width:595px;
+}
+
+.hdImg {
+    top:0;
+    left:0;
+    width:595px;
+}
+
+.bgImg {
+    top:15px;
+    left:0px;
+    width:595px;
+    height:549px;
+}
+
+.propImg1 {
+    top:345px;
+    left:30px;
+}
+
+.propImg2 {
+    top:345px;
+    left:170px;
+}
+
+.propList {
+    position:absolute;
+    top:100px;
+    left:330px;
+    width:210px;
+    max-height:250px;
+    background-color:white;
+    border-radius:5px;
+    white-space:pre;
+    overflow:hidden;
+    font-size:12px;
+    padding: 1em; 
+}
+
+.priceImg {
+    top:450px;
+    left:330px;
+    width:229px;
+}
+
+.propAddrPrice
+{
+    background-image:url(../Images/Brochure/ExclusiveListingSingle/priceImg.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    top:450px;
+    left:320px;
+    width:229px;
+    height:95px;
+    overflow:hidden;
+    font-size:13px;
+    color:white;
+    padding:0.5em;
+}
+
+.PropBedImg
+{
+    width:40px;
+    height:40px;
+    top:380px;
+    left:325px;
+}
+
+#tbPBedrooms
+{
+    top:390px;
+    left:350px;
+   
+}
+
+.PropBathImg
+{
+    width:40px;
+    height:40px;
+    top:380px;
+    left:410px;
+}
+
+.PropGarageImg
+{
+    width:40px;
+    height:40px;
+    top:380px;
+    left:485px;
+}
+
+.PropWebRef
+{
+    position:absolute;
+    top:320px;
+    left:339px;
+}
+
+.PropErfSize
+{
+    position:absolute;
+    top:350px;
+    left:339px;
+}
+
+.greybg {
+    position:absolute;
+    top:512px;
+    left:0;
+    width:595px;
+    height:330px;
+}
+
+.propDesc {
+    position:absolute;
+    font-size:10px;
+    top:601px;
+    left:58px;
+    text-wrap:normal;
+    height:160px;
+    color:#ffffff;
+    overflow:hidden;
+    width:200px;
+    padding:2em;
+    white-space:pre-wrap;
+    vertical-align:auto;
+}
+
+.propImg3 {
+    top:600px;
+    left:295px;
+}
+
+.propImg4 {
+    top:600px;
+    left:433px;
+}
+
+.agentDetails {
+    position:absolute;
+    top:765px;
+    left:37px;
+    width:526px;
+    height:95px;
+    background-color:white;
+}
+
+.agentImg {
+    top:775px;
+    left:42px;   
+}
+
+.agentImg img {
+    max-width:80px;
+    max-height:80px;
+}
+
+ .Details {
+    position:absolute;
+    top:780px;
+    left:130px;
+    width:250px;
+    height:90px;
+    font-size:9px;
+    color:#000000;
+}
+
+.Details td {
+    vertical-align:top;
+}
+
+.logoImg {
+    top:776px;
+    left:400px;
+}
+
+.logoImg img {
+    max-height:66px;
+    max-width:150px;    
+}
+
+.ieasaLogoImg {
+    top:779px;
+    left:259px;
+    width:60px;
+    font-size:12px;
+    text-align:center;
+}
+
+.Disclaimer {
+    position:absolute;
+    font-size:7px;
+    color:#000000;
+    top:845px;
+    left:340px;
+    text-align:center;
+}
+
