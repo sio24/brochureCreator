@@ -1,0 +1,162 @@
+﻿ .form-body
+{
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    background-color: #DFDFDF;
+    border-radius:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    color: #000000;
+    width: 95%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    padding: 0px;
+    /*border-collapse: collapse;*/
+}
+
+.form-body th, .form-body div.title, .form-body div.title > h1
+{
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    font-size:12px;
+    font-weight:bold;
+    margin:0px;
+    padding:0.33em;
+    text-align:center;
+    width:auto;
+}
+
+.form-subheader, .form-headernote, .form-subheader > h2
+{
+    padding:3px;
+    color: #666666;
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    font-weight:normal;
+    font-size:small;
+}
+
+.form-body td, .tabular td
+{
+     font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+     font-size: 12px;
+     text-align: left;
+     margin:0px;
+     padding:0.33em;
+     vertical-align:auto;
+}
+
+.form-body td.label
+{
+    font-weight:bold;
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    text-align:left;
+    margin:0px;
+    padding:8px 5px 5px 10px;
+    /*vertical-align:top;*/
+    width:35%;
+    min-width: 35%;
+    max-width: 45%;
+}
+
+.form-body label.label
+{
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+}
+
+.form-body td.input-left
+{
+    font-weight:bold;
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial;
+    text-align:left;
+    margin:0px;
+    padding: 5px 5px 5px 10px;
+    vertical-align:top;
+    width:35%;
+    min-width:35%;
+    max-width:45%;
+}
+
+.form-body td.label-right
+{
+    font-size:12px;
+    padding:5px 0px 5px 5px;
+    vertical-align:middle;
+}
+
+.form-body td.input,
+.form-body td.input td,
+.form-body td.input th
+{
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    font-size:14px;
+    padding:5px 0px 5px 5px;
+    vertical-align:middle;
+}
+
+.form-body td.input input,
+.form-body td.label input,
+.form-body td.input select,
+.form-body td.input textarea,
+.form-body td.input option
+{ 
+    vertical-align:middle;
+    text-align:left !important;
+    margin-left:10px;
+    margin-right:10px;
+    padding-left:10px;
+}
+
+.form-body td.input option
+{ 
+    padding:0px;
+    margin:0px;
+}
+
+.form-body td.input
+{
+    padding-top:5px;
+    vertical-align:top;
+}
+
+.form-body td.section
+{
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    font-weight:bold;
+    padding:5px 0px 5px 5px;
+    vertical-align:middle;
+    text-align:left;
+}
+
+.form-body td.submit
+{
+    background-color: transparent;
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+    color: #000000;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.form-body td.submit form 
+{
+        display:inline;
+        margin:0px;
+        padding:0px;
+
+}
+
+.form-sublabel,
+.optional
+{
+     font-family: "Lucida Sans", "Trebuchet MS", Arial, Helvetica, Arial, "Lucida Sans", "Trebuchet MS", Arial;
+     font-size:small;
+     font-weight:normal;
+     white-space:normal;
+}
+
+.thumbarea img
+{
+  max-width: 200px;
+  max-height: 200px;
+}

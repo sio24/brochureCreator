@@ -1,0 +1,480 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Flyer Creator test</title>
+        <link rel="stylesheet" href="css/colorbox.css" type="text/css" />
+        <link  rel="Stylesheet" href="css/flyer.css" type="text/css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="css/mainFlyer.css" media="all" />
+        <script src="jquery/jquery-1.9.1.min.js" type="text/javascript"></script>   
+        <script src="jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script src="jquery/jquery.colorbox.js" type="text/javascript"></script>
+    </head>
+        <body>
+            <form id="frmBrochure" runat="server">
+            <div>
+         <form onsubmit="" method="post" enctype="multipart/form-data" action="" name="f">
+             <!--form start-->
+            <table id="table_sharedform_Cmainfo_nametitle" class="form-body">
+                <tr>
+                    <th colspan="2">
+                        <div class="title">
+                            <div style="font-size:large; text-align:left;" >Name and Title :</div>
+                        </div>
+                        <div class="subheader">
+                            <div style="text-align:left;">Leave fields blank if they do not apply </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required">First Name : </span> </td>
+                    <td class="input"><input  name="name_first" value="" type="text" size="20" maxlength="30" id="name_first"/> </td>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required">Last Name : </span></td>
+                    <td class="input"><input  name="name_last" value="" type="text" size="20" maxlength="30" id="name_last" /> </td>
+                </tr>
+                <tr>
+                    <td class="label">Title :<div class="note">(optional)</div></td>
+                    <td class="input"><input name="agent_title" value="" type="text" size="40" maxlength="50" id="agent_title" /></td>
+                </tr>
+            </table>
+            <br />
+            <table id="table_sharedform_Cmainfo_address" class="form-body">
+                <tr>
+                    <th colspan="2">
+                        <div class="title" style="font-size:large; text-align:left;">Business Address :</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label"><span class="lebel-required">Company Name :</span></td>
+                    <td class="input"><input  name="company_name" value="" type="text" size="30" maxlength="35" id="company_name"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required">Street :</span></td>
+                    <td class="input"><input  name="company_street" value="" type="text" size="30" maxlength="35" id="company_street"/> </td>
+                </tr>
+                <tr>
+                    <td class="label"><div class="note">Suburb :</div></td>
+                    <td class="input"><input  name="company_suburb" value="" type="text" size="30" maxlength="25" id="company_suburb"/></td>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required">City, Province:</span></td>
+                    <td class="input"><label for="company_city" class="comp-label">City</label>
+                        <input name="company_city" value="" maxlength="25" size="30" type="text" id="company_city"/> ,&nbsp;
+                        <label for="comapny_province" class="comp-label">Province</label>
+                        <input  name="company_province" value="" maxlength="4" size="4" id="company_province"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required">Zip :</span></td>
+                    <td class="input"><input  name="company_zip" value="" type="text" maxlength="10" size="6" id="comapny_zip"/></td>
+                </tr>
+            </table>
+            <br />
+            <table id="table_sharedform_Cmainfo_contact" class="form-body">
+                 <tr>
+                    <th colspan="2">
+                        <div class="title">
+                            <div style="font-size:large; text-align:left;">Phones, Email and Website :</div>
+                            <div class="subheader"><div style="text-align:left;">Leave fields blank if they do not apply</div></div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <div class="title"></div>
+                        <div class="subheader"><div style="text-align:left; color:black;"><b>Phone 1 :</b></div></div>
+                    </th>
+                    <td class="label">
+                        <span class="label-required"><label for="ph1_label" class="comp-label"></label>
+                            <select id="ph1_label" name="ph1_label">
+                                <option value="Office">Office</option>
+                                <option value="Cell">Cell</option>
+                                <option value="Fax">Fax</option>
+                                <option value="Home">Home</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td class="input">(<label for="ph11" class="comp-label"></label>
+                        <input  name="ph11" value="" maxlength="3" type="text" id="ph11" size="3"/> 
+                        )<label for="ph12" class="comp-label"></label>
+                        <input  name="ph12" value="" maxlength="3" type="text" id="ph12" size="3"/>
+                        &nbsp<label for="ph13" class="comp_label"></label>
+                        <input name="ph13" value="" maxlength="4" type="text" id="13" size="4"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <div class="title"></div>
+                        <div class="subheader"><div style="text-align:left; color:black;"><b>Phone 2 :</b></div></div>
+                    </th>
+                    <td class="label">
+                        <span class="label-required"><label for="ph2_label" class="comp-label"></label>
+                            <select id="Select1" name="ph1_label">
+                                <option value="Office">Office</option>
+                                <option value="Cell">Cell</option>
+                                <option value="Fax">Fax</option>
+                                <option value="Home">Home</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td class="input">(<label for="ph21" class="comp-label"></label>
+                        <input  name="ph21" value="" maxlength="3" type="text" id="Text1" size="3"/> 
+                        )<label for="ph22" class="comp-label"></label>
+                        <input  name="ph22" value="" maxlength="3" type="text" id="Text2" size="3"/>
+                        &nbsp<label for="ph23" class="comp_label"></label>
+                        <input name="ph23" value="" maxlength="4" type="text" id="Text3" size="4"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <div class="title"></div>
+                        <div class="subheader"><div style="text-align:left; color:black;"><b>Phone 3 :</b></div></div>
+                    </th>
+                    <td class="label">
+                        <span class="label-required"><label for="ph1_label" class="comp-label"></label>
+                            <select id="Select2" name="ph1_label">
+                                <option value="Office">Office</option>
+                                <option value="Cell">Cell</option>
+                                <option value="Fax">Fax</option>
+                                <option value="Home">Home</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td class="input">(<label for="ph31" class="comp-label"></label>
+                        <input  name="ph31" value="" maxlength="3" type="text" id="Text4" size="3"/> 
+                        )<label for="ph32" class="comp-label"></label>
+                        <input  name="ph32" value="" maxlength="3" type="text" id="Text5" size="3"/>
+                        &nbsp<label for="ph33" class="comp-label"></label>
+                        <input name="ph33" value="" maxlength="4" type="text" id="Text6" size="4"/>
+                    </td>
+                </tr>
+               <tr>
+                   <td class="label">
+                       <input  type="hidden" name="email_label" value="Email:"/>
+                       <span>Email :</span>
+                       <div class="note">(optional)</div>
+                   </td>
+                   <td class="input"><input name="email_label" value="" maxlength="40" type="text" size="35" /></td>
+               </tr>
+                <tr>
+                    <td class="label">Company or Personal Website :
+                        <div class="note">(optional)</div>
+                    </td>
+                    <td class="input"><input name="website" value="" maxlength="40" type="text" id="website" size="35" /></td>
+                </tr>
+            </table>
+            <table id="table_itemform.CMAINFO_Flyer_AvailableNow" class="form-body">
+                <tr>
+                    <th colspan="2">
+                        <div class="title"><div style="font-size:3; align:left">Your Photo :</div></div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <div class="subheader">Upload a picture of yourself</div>
+                        <div class="note">(optional)</div>
+                    </td>
+                     
+                    <td class="input">
+                        <%--<div style="margin:2em; text-align:center">
+                            <div id="divAddress" style="width:400px; margin:0 auto 5em;font-weight:bold;text-align:left"></div>
+                            <asp:FileUpload ID="ImgUpload" runat="server" style="width: 400px; background-color:#CCC;" size="65" /><br/>
+                               <asp:Button ID="btUpload" runat="server" Text="Upload" OnClientClick="btUploadClick();" style="margin:1em 0; width:150px; font-weight:bold; height:3em;"/><br/>
+                                 <div style="margin:1.5em">
+                                      <asp:Label ID="lblMessage" runat="server" style="color:red; font-weight:bold; font-size:1.25em">&nbsp;</asp:Label>
+                               </div>
+                                <asp:HiddenField ID="hfAgentImgID" runat="server" />
+                                <asp:HiddenField ID="hfUploadSuccess" runat="server" />
+                                <asp:HiddenField ID="hfIsPostback" runat="server" />
+                        </div>--%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <button type="button" class="button" id="photo_agent_uploadbutton" onclick="window.open"; name="photo_agent_jsbutton" value="1">Upload File</button>
+                    </td>
+                    <td>
+                        <style>.thumbarea img {max-width:100px; max-height:100px} </style>
+                        <span class="thumarea" id="photo_agent_thumbarea" style="display:none;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         &nbsp;
+                         <div id="Div1" style="display:none;">
+                            <button type="button" class="button" id="photo_upload_removebutton" onclick="file_uplaod_success('photo_uplaod','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                 <tr><!--property photo's-->
+                    <th colspan="2">
+                        <div class="title" style="font-size:3; align: left;">Property Photos : </div>
+                        <div class="subheader" style="align:left">All Photo's can be cropped and resized after uploading </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label"><b>PHOTO 1</b>
+                        <div class="form-sublabel">This is the main art for the flyer. Choose a good shot of the property's exterior</div>
+                        <div class="note">(optional)</div>
+                    </td>
+                     <td class="input"><input  type="hidden" name="photo_1_crop" value=""/>
+                        <input type="hidden" name="photo_1_origname" value="" />
+                        <input  type="hidden" name="photo_1" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <button type="button" class="button" id="photo_1_uploadbutton" onclick="window.open" name="photo_1_jsbutton" value="1">Upload File</button>
+                    </td>
+                    <td>
+                        <style>.thumarea img {max-width:100px; max-height:100px} </style>
+                        <span class="thumarea" id="photo_1_thumbarea" style="display:none;"></span>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                         &nbsp;
+                         <div id="photo_1_remove" style="display:none;">
+                            <button type="button" class="button" id="photo_1_removebutton" onclick="file_uplaod_success('photo_1','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                    <tr>
+                        <td class="label"><b>PHOTO 2</b>
+                            <div class="form-sublabel">Use supplementary photo -- such as shots of interior rooms or the back yard -- in the three remaining slots</div>
+                            <div class="note">(optional)</div>
+                        </td>
+                        <td class="input"><input  type="hidden" name="photo_2_crop" value=""/>
+                            <input type="hidden" name="photo_2_origname" value="" />
+                            <input  type="hidden" name="photo_2" value=""/>
+                        </td>
+                     </tr>
+                   <tr>
+                        <td> 
+                            <button type="button" class="button" id="photo_2_uploadbutton" onclick="window.open" name="photo_2_jsbutton" value="1">Upload File</button>
+                        </td>
+                         <td>
+                            <span class="thumbarea" id="photo_2_thumbarea" style="display:none;"></span>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>
+                         &nbsp;
+                         <div id="photo_2_remove" style="display:none;">
+                            <button type="button" class="button" id="photo_2_removebutton" onclick="file_uplaod_success('photo_2','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                    <tr>
+                        <td class="label"><b>PHOTO 3</b>
+                            <div class="note">(optional)</div>
+                        </td>
+                        <td class="input"><input  type="hidden" name="photo_3_crop" value=""/>
+                            <input type="hidden" name="photo_3_origname" value="" />
+                            <input  type="hidden" name="photo_3" value=""/>
+                        </td>
+                     </tr>
+                   <tr>
+                        <td> 
+                            <button type="button" class="button" id="photo_3_uploadbutton" onclick="window.open" name="photo_3_jsbutton" value="1">Upload File</button>
+                        </td>
+                         <td>
+                            <span class="thumbarea" id="photo_3_thumarea" style="display:none;"></span>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>
+                         &nbsp;
+                         <div id="photo_3_remove" style="display:none;">
+                            <button type="button" class="button" id="photo_3_removebutton" onclick="file_uplaod_success('photo_3','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                    <tr>
+                        <td class="label"><b>PHOTO 4</b>
+                            <div class="note">(optional)</div>
+                        </td>
+                        <td class="input"><input  type="hidden" name="photo_4_crop" value=""/>
+                            <input type="hidden" name="photo_4_origname" value="" />
+                            <input  type="hidden" name="photo_4" value=""/>
+                        </td>
+                     </tr>
+                   <tr>
+                        <td> 
+                            <button type="button" class="button" id="photo_4_uploadbutton" onclick="window.open" name="photo_4_jsbutton" value="1">Upload File</button>
+                        </td>
+                         <td>
+                            <span class="thumbarea" id="photo_4_thumbarea" style="display:none;"></span>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>
+                         &nbsp;
+                         <div id="photo_4_remove" style="display:none;">
+                            <button type="button" class="button" id="photo_4_removebutton" onclick="file_upload_success('photo_4','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                 <tr><!--company logo-->
+                    <th colspan="2">
+                        <div class="title" style="font-size:3; align: left;">Logos and QR code : </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label"><b>YOUR PERSONAL OR COMPANY LOGO</b>
+                        <div class="note">(optional)</div>
+                    </td>
+                     <td class="input"><input  type="hidden" name="yourlogo_origname" value=""/>
+                        <input type="hidden" name="yourlogo_crop" value="" />
+                        <input  type="hidden" name="yourlogo" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <button type="button" class="button" id="yourlogo_uploadbutton" onclick="window.open" name="yourlogo_jsbutton" value="1">Upload File</button>
+                    </td>
+                    <td>
+                        <span class="thumbarea" id="yourlogo_thumbarea" style="display:none;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         &nbsp;
+                         <div id="yourlogo_remove" style="display:none;">
+                            <button type="button" class="button" id="yourlogo_removebutton" onclick="file_uplaod_success('yourlogo','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                <tr><!--qr code-->
+                    <td class="label"><b>YOUR QR CODE IMAGE</b>
+                        <div class="note">(optional)</div>
+                    </td>
+                     <td class="input"><input  type="hidden" name="qrcode" value=""/>
+                        <input type="hidden" name="qrcode_origname" value="" />
+                        <input  type="hidden" name="qrcode_crop" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <button type="button" class="button" id="qrcode_uploadbutton" onclick="window.open" name="qrcode_jsbutton" value="1">Upload File</button>
+                    </td>
+                    <td>
+                        <span class="thumbarea" id="qrcode_thumbarea" style="display:none;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         &nbsp;
+                         <div id="qrcode_romove" style="display:none;">
+                            <button type="button" class="button" id="qrcode_removebutton" onclick="file_uplaod_success('qrcode','','','')">Remove Image</button>
+                        </div>
+                   </td>
+                </tr>
+                <tr> <!--IEASA Logo-->
+                    <td class="label"><b>OPTIONAL IEASA Logo</b>
+                        <div class="note">(optional)</div>
+                    </td>
+                    <td class="input">
+                        <table class="checkbox-table">
+                            <tr>
+                                <td class="checkbox-input">
+                                    <input name="r_logo" id="r_logo_0" type="radio" value="IEASALogo" />
+                                </td>
+                                <td class="checkbox-label">
+                                    <label for="r_logo_0" ><center>IEASA Logo</center><img src="images/ieasa.gif" alt="" /></label>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="checkbox-table">
+                            <tr>
+                                <td class="checkbox-input">
+                                    <input name="r_logo" id="r_logo_1" type="radio" value="Off" />
+                                </td>
+                                <td class="checkbox-label"><label for="r_logo_1">Off</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr> <!--Property Information details-->
+                    <th colspan="2">
+                        <div class="title" style="font:3 ; align:left">Property Infpormation : </div>
+                    </th>
+                </tr>
+                <tr>
+                    
+                    <td class="label"><b>Street Address</b><div class="note">(optional)</div></td>
+                    <td class="input"><input  name="propertAddress" value="" type="text" size="40" maxlength="50" id="propertyAddress"/></td>
+                </tr>
+                <tr>
+                   <td class="label"><span class="label-required"><b>Suburb</b></span></td>
+                    <td class="input"><input name="propertySuburb" value="" type="text" size="40" maxlength="40" id="propertySuburb" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required"><b>Province</b></span></td>
+                    <td class="input"><input name="propertyProvince" value="" type="text"size="40" maxlength="40" id="propertyProvince" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><span class="label-required"><b>Price</b></span></td>
+                    <td  class="input">R<input name="price" value="" type="text" size="30" maxlength="30" id="price"/></td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <div class="title" style="font:3; align:left">Property Details :</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="label"><b>SECTION 1</b>
+                    <div class="form-sublabel">For each of these two sections, list decriptive details about the property.Use the default values in each field as a guide.</div>
+                        <div class="note">(optional)</div>
+                    </td>
+                    <td class="input"><textarea name="textInput" rows="8" cols="25" onchange="" id="textInput"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><b>SECTION 2</b>
+                        <div class="note">(optional)</div></td>
+                    <td class="input"><textarea name="textInput" rows="8" cols="25"  onchange="" id="textInput2"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table class="form-body">
+                <tr>
+                    <td colspan="2" class="submit center">
+                        <input  type="hidden" name="do_cancel"/>
+                        <button type="button" class="button" id="button_cancel" class="formfooter-cancel" onclick="document.f.do_cancel.value=this.form.submit();" name="do_cancel_dummy" value="1">Discard this item</button>
+                        <noscript>
+                            <button type="submit" class="button" id="submit_cancel" name="do_cancel" value="1">Discard this item</button>
+                        </noscript>
+                        <span id="quote-notneeded-button">
+                            <button type="submit" class="button" id="submit_continue" name="do_proof" value="1">Generate Proof
+                                <span class="button_arrow_right_text">&gt;&gt;</span>
+                                <span class="button_arrow_right"> </span>
+                            </button></span>
+                    </td>
+                </tr>
+            </table>
+            <div class="center">Please click the above button only once.</div>
+            <div class="center">Please be patient. You may have to wait a moment for your proofs to display.</div>
+            </div>
+            <div class="footnote"> </div>
+
+            </form>
+            </body> 
+            <script type="text/javascript">
+
+                jQuery(document).ready(function () {
+                    $("button.button").colorbox({href:'up.php',width:1024, height:1024});
+                });
+
+                $(function () {
+                    var name=$("name_first")
+                });
+            </script>
+</html>
+

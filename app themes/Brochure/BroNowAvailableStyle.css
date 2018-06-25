@@ -1,0 +1,312 @@
+﻿@media screen {
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}
+
+div.portrait {
+    width: 595px;
+    margin: 0 auto;
+}
+
+div.landscape {
+    width: 876px;
+    margin: 0 auto;
+}
+
+body {
+    border:0;
+    background-color:#fff;
+}
+[class*=Img] {
+    position:absolute;
+    overflow:hidden;
+}
+
+/*[class*=Img] img {
+    /*position:relative;*/
+    /*margin-top:auto;
+    margin-bottom:auto;*/
+    /*margin-left:auto;
+    margin-right:auto;*/
+    /*display:block; 
+}*/
+
+[class^=propImg] img {
+   border:2px solid black;
+   width:190px;
+   height:190px;
+}
+
+.hdImg
+{
+    left:0px;
+}
+
+.ftImg
+{
+    /*position:absolute;*/
+    top:764px;
+    left:0px;
+}
+
+/*.ieasaLogoImg {
+    top:779px;
+    left:259px;
+    width:60px;
+    font-size:12px;
+    text-align:center;
+}*/
+
+.Disclaimer 
+{
+    position:absolute;
+    font-size:7px;
+    color:#000000;
+    top:864px;
+    left:375px;
+    text-align:center;
+}
+
+.bgImg {
+    top:118px;
+    left:195px;
+    width:400px;
+    height:350px;
+}
+
+.propImg1 {
+    top:118px;
+    left:4px;
+    /*width:180px;
+    height:170px;*/
+}
+
+.propImg2 {
+    top:298px;
+    left:4px;
+    /*width:180px;
+    height:170px;*/
+}
+
+.propList {
+    position:absolute;
+    top:474px;
+    left:4px;
+    width:180px;
+    height:180px;
+    background-color:lightblue;
+    border-radius:5px;
+    white-space:pre;
+    overflow:hidden;
+    font-size:12px;
+    /*padding: 1em;*/ 
+}
+
+.priceImg {
+    top:450px;
+    left:330px;
+    width:229px;
+}
+
+/*.propAddrPrice {
+    /*background-image:url(../Images/Brochure/ExclusiveListingSingle/priceImg.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    top:450px;
+    left:320px;
+    width:229px;
+    height:95px;
+    overflow:hidden;
+    font-size:13px;
+    color:white;
+    padding:0.5em;
+}*/
+
+#tbPropAddress
+{
+    overflow:hidden;
+    font-size:13px;
+    color:black;
+    position:absolute;
+    top:90px;
+    left:15px;
+}
+
+#tbPropSuburb
+{
+    overflow:hidden;
+    font-size:13px;
+    color:black;
+    position:absolute;
+    top:89px;
+    left:265px;
+}
+
+#tbPropPrice
+{
+    overflow:hidden;
+    font-size:13px;
+    color:black;
+    position:absolute;
+    top:100px;
+    left:535px;
+}
+
+.PropWebRef
+{
+    font-size:13px;
+    color:black;
+    position:absolute;
+    top:70px;
+    left:200px;
+}
+
+.ErfSize
+{
+    font-size:13px;
+    color:black;
+    position:absolute;
+    top:70px;
+    left:478px;
+}
+
+.PropBedImg
+{
+    width:50px;
+    height:50px;
+    top:41px;
+    left:8px;
+}
+
+#tbPBedrooms
+{
+    width:15px;
+    height:15px;
+    top:55px;
+    position:absolute;
+    left:55px;
+    color:#000;
+    font-size:13px;
+}
+
+.PropBathImg{
+    width:50px;
+    height:50px;
+    top:41px;
+    left:65px;
+}
+
+/*#tbPBathrooms
+{
+    width:15px;
+    height:15px;
+    top:55px;
+    position:absolute;
+    left:55px;
+    color:#000;
+    font-size:13px;
+}*/
+
+.PropGarageImg{
+    width:50px;
+    height:50px;
+    top:41px;
+    left:108px;
+}
+
+.greybg {
+    position:absolute;
+    top:512px;
+    left:0;
+    width:595px;
+    height:330px;
+}
+
+.propDesc {
+    position:absolute;
+    font-size:10px;
+    top:658px;
+    left:1px;
+    text-wrap:normal;
+    height:106px;
+    color:#000;
+    overflow:hidden;
+    width:597px;
+    white-space:pre-wrap;
+    background-color:lightblue;
+    border-radius:5px;
+}
+
+.propImg3 {
+    top:474px;
+    left:195px;
+    /*height:180px;
+    width:190px;*/
+}
+
+.propImg4 {
+    top:474px;
+    left:405px;
+    /*height:180px;
+    width:190px;*/
+}
+
+.agentDetails {
+    position:absolute;
+    top:765px;
+    left:37px;
+    width:526px;
+    height:95px;
+    background-color:white;
+}
+
+.agentImg {
+    top:771px;
+    left:4px;   
+}
+
+.agentImg img {
+    max-width:100px;
+    max-height:100px;
+}
+
+ .Details {
+    position:absolute;
+    top:782px;
+    left:110px;
+    width:250px;
+    height:90px;
+    font-size:9px;
+    color:#000000;
+}
+
+.Details td {
+    vertical-align:top;
+}
+
+.logoImg {
+    top:784px;
+    left:430px;
+}
+
+.logoImg img {
+    max-height:100px;
+    max-width:150px;    
+}
+
+.ieasaLogoImg {
+    top:790px;
+    left:350px;
+    width:60px;
+    font-size:12px;
+    text-align:center;
+}
+
+

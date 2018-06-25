@@ -1,0 +1,331 @@
+﻿@media screen {
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:not(tspan) {
+    font-size: 7pt;
+}
+
+table.small td, table.small th {
+    font-size: 6pt;
+}
+
+div.portrait {
+    width: 672px;
+    margin: 0 auto;
+}
+
+div.landscape {
+    width: 960px;
+    margin: 0 auto;
+}
+
+table {
+    empty-cells: show;
+}
+
+td, th {
+    text-align: left;
+}
+
+#main {
+
+    font-size: 28px;
+}
+
+table.outer {
+    page-break-before: always;
+    width: 100%;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 12px;
+    table-layout: fixed;
+}
+
+table.outer:first-of-type {
+    page-break-before: avoid;
+}
+
+table.outer table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: auto;
+    background-color: white;
+    border: double 3px #999;
+}
+
+table.outer table td, table.outer table th
+{
+    padding: .25em .5em;
+    border: solid 1px #999;
+}
+
+table.outer table tr, .pbia {
+    page-break-inside: avoid;
+}
+
+table.outer table.head td {
+    padding: 1em;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 0;
+}
+
+table.outer table.headinfo {
+    border-style: none !important;
+}
+
+table.outer table.headinfo th, table.outer table.headinfo td {
+    border-style: none !important;
+    font-size: 8pt;
+    padding-right: 1.5em;
+}
+
+table.data td, table.data th {
+    border: 1px solid #999;
+}
+
+table.chdata td, table.chdata th {
+    border: 1px solid #999;
+    padding: 0.35em !important;
+}
+
+tr.vab td, tr.vab th, .vab {
+    vertical-align: bottom;
+}
+
+tr.vat td, tr.vat th, .vat {
+    vertical-align: top;
+}
+
+table.outer table.image td {
+    padding: 0;
+}
+
+table.outer table.image td img {
+    margin-bottom: -2px;
+}
+
+table.data table.foot {
+    width: auto;
+    border-width: 0;
+}
+
+table.data table.foot td, table.data table.foot th {
+    font-size: 7pt;
+    border-width: 0;
+}
+
+table.data table.foot td {
+    padding-right: 2em;
+}
+
+table.data table.egEst {
+    width: auto;
+    border-collapse: separate;
+    border-spacing: .5em .25em;
+    margin: 0 auto;
+    border-width: 0;
+}
+
+table.data table.egEst td, table.data table.egEst th {
+    font-size: 7pt;
+    border-width: 0;
+}
+
+thead {
+    border-bottom: 3px double #999;
+}
+
+h1 {
+    background-color: #426fcd;
+    color: white;
+    padding: 2pt;
+    text-align: left;
+    font-weight: bold;
+    font-size: 10pt;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+h1 * {
+    font-size: 10pt;
+}
+
+h2 {
+    /*background-color: #56a8fb;*/
+    background-color: #409cfa;
+    color: white;
+    padding: 2pt;
+    text-align: left;
+    font-weight: bold;
+    font-size: 9pt;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+h2 * {
+    font-size: 9pt;
+}
+
+h3 {
+    background-color: #7fbcf9;
+    color: white;
+    padding: 2pt;
+    text-align: left;
+    font-weight: bold;
+    font-size: 8pt;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+h3 * {
+    font-size: 8pt;
+}
+
+.dr {
+    border-right: 3px double #999 !important;
+}
+
+.db {
+    border-bottom: 3px double #999 !important;
+}
+
+.dt {
+    border-top: 3px double #999 !important;
+}
+
+.co {
+    /*color: green;*/
+    background-color: #cfc;
+}
+
+.fs {
+    /*color: maroon;*/
+    background-color: #d18a8a;
+}
+
+DIV.Company
+{
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+DIV.AgentName
+{
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.center
+{
+    text-align: center;
+}
+
+div.center {
+    margin: 1em auto;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.normal
+{
+    font-weight: normal;
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+TABLE.ValRange
+{
+    border-style: none !important;
+}
+
+TABLE.ValRange TD
+{
+    border-style: none !important;
+    white-space: nowrap !important;
+}
+
+TABLE.ValRange TD.Value
+{
+    font-size: 10pt !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+TABLE.ValRange TD.Value *
+{
+    font-size: 10pt !important;
+}
+
+TABLE.ValRange TABLE.Renov TD,
+TABLE.ValRange TABLE.Renov TH
+{
+    border: 1px solid #999 !important;
+    padding: 2px 4px !important;
+    font-size: 7pt !important;
+}
+
+TABLE.ValRange TABLE.Renov TD.Y
+{
+    text-align: center !important
+}
+
+TABLE.ValRange TABLE.Renov TD.A
+{
+    text-align: right !important
+}
+
+TABLE.ValRange TABLE.Renov TD.D
+{
+    text-align: left !important
+}
+
+TABLE.ValRange TABLE.Renov TH
+{
+    text-align: left !important
+}
+
+table.ValRange table.Range {
+    border-style: none !important;
+}
+
+table.ValRange table.Range td,
+table.ValRange table.Range th {
+    border-style: none !important;
+    padding: 2px 4px !important;
+    font-size: 7pt !important;
+    white-space: nowrap;
+}
+
+TABLE.ValRange TABLE.Range TD
+{
+    text-align: right !important
+}
+
+TABLE.ValRange TABLE.Range TH
+{
+    text-align: left !important
+}
+
