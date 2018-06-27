@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Brochure Creator</title>
+	<meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../JavaScript/uploadify/uploadify.css" />
     <link rel="stylesheet" type="text/css" href="../JavaScript/jqueryMaxLength/jquery.maxlength.css" /> 
 </head>
@@ -12,7 +13,7 @@
 <form id="form1" runat="server"> 
     <asp:ScriptManager EnablePageMethods="true" runat="server">
         <Scripts>
-            <asp:ScriptReference Path="~/JavaScript/jquery/jquery-1.9.1.min.js" />
+            <asp:ScriptReference Path="~/JavaScript/jquery/jquery-2.2.4.min.js" />
             <asp:ScriptReference Path="~/JavaScript/jquery/jquery.colorbox.js"/>
             <asp:ScriptReference Path="~/JavaScript/uploadify/jquery.uploadify.min.js"/>
             <asp:ScriptReference Path="~/JavaScript/jqueryMaxLength/jquery.maxlength.js" />
@@ -32,15 +33,13 @@
             </tr>
             <tr>
                 <td class="label"><span class="label-required">Company Name :</span>
-                    <input name="compName" value="" type="text" size="30" maxlength="35" id="tbCompany" />
-                                  
-                    
+                    <input name="compName" value="" type="text" size="30" maxlength="35" id="tbCompany" /> 
                 </td>
                 <td class="label"><span class="label-required">Address 1 :</span>
                     <input name="compAddress1" value="" type="text" size="45" maxlength="64" id="tbAddress1" />
                </td>
             </tr>
-                <tr>
+              <tr>
                     <td></td>
                 <td class="label"><span class="label-required">Address 2 :</span>
                     <input name="compAddress2" value="" type="text" size="45" maxlength="64" id="tbAddress2" />
@@ -70,7 +69,7 @@
                          <input name="website" value="" maxlength="64" type="text" id="tbWebsite" size="40"  />
                 </td>
             </tr>
-             <tr>
+              <tr>
                  <td class="label">Company Logo : </td>
                 
             <td>
@@ -82,14 +81,14 @@
                   <span class="thumbarea" id="tnLogo"></span>
             </td>
         </tr>
-         <tr>
+        <tr>
             <!--IEASA Logo-->
-            <td class="label"><b>OPTIONAL IEASA Logo</b>
+             <td class="label"><b>OPTIONAL IEASA Logo</b>
                     <div class="note">(optional)</div>
             </td>
             <td class="input">
-                    <table class="radio">
-                        <tr>
+                   <table class="radio">
+                         <tr>
                             <td class="checkbox-input">
                                 <input name="r_logo" id="r_logo_1" type="radio" value="IEASALogo" />
                             </td>
@@ -106,7 +105,7 @@
                         </td>
                         </tr>
                     </table>
-            </td>
+           </td>
             <td>&nbsp;</td>
         </tr>
         </table>
@@ -197,17 +196,17 @@
                   <div class="title" style="font-size:large; text-align: left;"> Property Details :</div>
                 </th>
             </tr>
-        <tr>
+    <tr>
             <td class="label"><b>Address :</b>
-                <input value="" type="text" size="40" maxlength="50" id="tbPropAddress" />
+                <input value="" type="text" size="40" maxlength="50" class="tbAddress1" />
             </td>
-            <td class="label"><span class="label-required"><b>Suburb :</b></span>
-                 <input value="" type="text" size="40" maxlength="40" id="tbPropSuburb" />
+           <td class="label"><span class="label-required"><b>Suburb :</b></span>
+                 <input value="" type="text" size="40" maxlength="40" id="tbSuburb" />
             </td>
         </tr>
-                <tr>
-                    <td class="label"><b>Price :</b>
-                        <input value="" type="text" size="30" maxlength="30" id="tbPropPrice" />
+                   <tr>
+                   <td class="label"><b>Price :</b>
+                        <input value="" type="text" size="30" maxlength="30" id="tbPrice" />
                     </td>
                     <td class="label"><b>Erf Size :</b>
                         <input value="" type="text" size="30" maxlength="30" id="tbErfSize" />
@@ -216,9 +215,9 @@
                         <input value="" type="text" size="20" maxlength="20" id="tbWebRef" />
                     </td>
                 </tr>
-            <tr>
+           <tr>
                     <td class="label"><b>No Bedrooms :</b>
-                        <input value="" type="text" size="5" maxlength="5" id="tbPBedrooms" />
+                        <input value="" type="text" size="5" maxlength="5" id="tbBedrooms" />
                     </td>
                    <td class="label"><b>No Bathrooms :</b>
                         <input value="" type="text" size="5" maxlength="5" id="tbPBathrooms" />
@@ -232,11 +231,11 @@
                         <div class="form-sublabel">List details about the property.<br />Use the default values in each field as a guide.</div>
                     </td>
                     <td class="input">
-                        <textarea rows="10" cols="35" onchange="" id="tbPropDetails"></textarea>
+                        <textarea rows="10" cols="35" onchange="" id="tbDetails"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td class="label"><b>Property Description :</b>
+                   <td class="label"><b>Property Description :</b>
                         <div class="form-sublabel">Give a brief description about the property.<br />Use the default values in each field as a guide.</div>
                     </td>
                     <td class="input">
@@ -453,23 +452,22 @@
     }
 
     function agentResults(result) {
-
-     eval("var BroAgentInfo =" + result);
-     $.each(BroAgentInfo, function (index, value) {
-         var $elem = $('[id$="' + index + '"]').last();
-         if ($elem.length > 0) {
-             switch ($elem[0].id.substring(0, 2)) {
-                 case "tb":
-                     $elem.val(value);
-                     break;
-                 case "tn":
-                     if (index == "Logo") {
-                         $elem.html('<img src="/Images/Subscribers/' + value + '" />')
-                     }
-                     break;
-             }
-         }
-     });
+        var BroAgentInfo = JSON.parse(result);
+        $.each(BroAgentInfo, function (index, value) {
+            var $elem = $('[id$="' + index + '"]').last();
+            if ($elem.length > 0) {
+                switch ($elem[0].id.substring(0, 2)) {
+                    case "tb":
+                        $elem.val(value);
+                        break;
+                    case "tn":
+                        if (index == "Logo") {
+                            $elem.html('<img src="/Images/Subscribers/' + value + '" />')
+                        }
+                        break;
+                }
+            }
+        });
     }
 
     function CancelBro() {

@@ -14,9 +14,9 @@ Partial Class BrochureImgCropper
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim CustID As ULong = CInt(Session("CustomerID"))
-        If CustID = 0 Or CustID >= 1000000 Then
+        If CustID = 0 Then
             Response.Write("<h1>You are not logged in.</h1>")
-            Response.Write("Please reload <a href=""http://www.cmainfo.co.za"" target=""_top"">www.cmainfo.co.za</a> and log-in again.")
+            Response.Write("Please reload <a href=""https://www.cmainfo.co.za"" target=""_top"">www.cmainfo.co.za</a> and log-in again.")
             Response.End()
         End If
 

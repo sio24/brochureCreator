@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Exclusive Listing S</title>
+	<meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="BroExlusiveListStyle.css"/>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <div class="portrait">
     <asp:ScriptManager EnablePageMethods="true" runat="server">
         <Scripts>
-            <asp:ScriptReference Path="~/JavaScript/jquery/jquery-1.9.1.min.js" />
+            <asp:ScriptReference Path="~/JavaScript/jquery/jquery-2.2.4.min.js" />
         </Scripts>
     </asp:ScriptManager>
         <asp:HiddenField ID="hfBroID" runat="server" />
@@ -105,8 +106,7 @@
         });
 
         function BroEditInfo(result) {
-
-            eval("var BroEditInfo =" + result);
+            var BroEditInfo = JSON.parse(result);
             $.each(BroEditInfo, function (index, value) {
                 var $elem = $('[id$="' + index + '"]').last();
                 if ($elem.length > 0) {

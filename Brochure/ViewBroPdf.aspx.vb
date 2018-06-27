@@ -7,7 +7,11 @@ Partial Class Mapping_ViewBroPdf
 
         Dim Width As String = ""
         Dim sbReportURL As New System.Text.StringBuilder
-        sbReportURL.Append("http://")
+        sbReportURL.Append("http")
+        If Request.ServerVariables("HTTPS") = "on" Then
+            sbReportURL.Append("s")
+        End If
+        sbReportURL.Append("://")
         sbReportURL.Append(Request.ServerVariables("HTTP_HOST"))
         sbReportURL.Append("/Mapping/BroExlusiveList.aspx?")
         sbReportURL.Append(Request.QueryString)

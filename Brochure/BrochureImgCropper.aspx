@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>crop Photo</title>
+	<meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../JavaScript/crop/imgareaselect-default.css" />
 </head>
     
@@ -12,7 +13,7 @@
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
             <Scripts>
-                <asp:ScriptReference Path="~/JavaScript/jquery/jquery-1.9.1.min.js" />
+                <asp:ScriptReference Path="~/JavaScript/jquery/jquery-2.2.4.min.js" />
                 <asp:ScriptReference Path="~/JavaScript/crop/jquery.imgareaselect.js" />
             </Scripts>
         </asp:ScriptManager>

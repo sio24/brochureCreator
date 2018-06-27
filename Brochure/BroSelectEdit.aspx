@@ -5,12 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+	<meta charset="utf-8" />
 </head>
 <body>
 <form id="form1" runat="server">
 <asp:ScriptManager EnablePageMethods="true" runat="server">
         <Scripts>
-            <asp:ScriptReference Path="~/JavaScript/jquery/jquery-1.9.1.min.js" />
+            <asp:ScriptReference Path="~/JavaScript/jquery/jquery-2.2.4.min.js" />
         </Scripts>
 </asp:ScriptManager>
      <div>
