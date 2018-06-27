@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Brochure Creator</title>
-	<link rel="stylesheet" type="text/css" href="brochure.css">
-	<script type="text/javascript" src="Brochure.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="brochure.css"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="Brochure.js"></script>
+    <title>Brochure Creator</title>
 </head>
 <body>
-	testing
+    <form id="frmAgentInfo" class="col s12">
+        <h1 class="headerAgnt">Agent Details</h1>
+            <table cellpadding = 10>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="label-required">First Name :</span>
+                    </td>
+                    <td class="txtAgentInfo">
+                        <input type="text" placeholder="First Name" id="name_first"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="label-required">Last Name :</span>
+                    </td>
+                    <td class="txtAgentInfo">
+                        <input type="text" placeholder="Last Name" id="name_last"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="label-required">Company Name :</span>
+                    </td>
+                    <td class="txtAgentInfo">
+                        <input type="text" placeholder="Company Name" id="company"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="label-required ">Office Number :</span>
+                    </td>
+                <td class="txtAgentInfo ">
+                        <input type="tel" placeholder="Office Number" id="office_tel"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="label-required">Fax Number :</span>
+                    </td>
+                    <td class="txtAgentInfo">
+                        <input type="text" placeholder="Fax Number" id="fax_no"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="label-required">Cell :</span>
+                    </td>
+                    <td class="txtAgentInfo">
+                        <input type="text" placeholder="Cell" id="cell"/>
+                    </td>
+                        <td class="lblAgentInfo">
+                            <span class="label-required">Email :</span>
+                        </td>
+                        <td class="txtAgentInfo">
+                            <input type="email" placeholder="Email" id="email" />
+                        </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="lblImg">Company Logo :</span>
+                    </td>
+                    <td>
+                        <button id="cmpLogoBtn" class="btn waves-effect waves-teal">Upload</button>
+                    </td>
+                    <td>
+                        <img src="" alt="">
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="lblAgentInfo">
+                        <span class="lblImg">Agent Photo :</span>
+                    </td>
+                    <td>
+                        <button id="agntBtn" class="btn waves-effect waves-teal">Upload</button>
+                    <td>
+                        <img src="" alt="" sizes="" srcset="">
+                            <img src="" alt="">
+                    </td>
+                </tr>
+            </table>
+
+
+            <button id="nextbtn" class="btn waves-effect waves-teal">Next</button>
+            <button id="cancelbtn" class="btn waves-effect waves-teal">Cancel</button>
+            
+    </form>
 </body>
 </html>
